@@ -1,3 +1,3 @@
 # Symfony 5 with a perspective of DDD
 
-> coding dojo: from 20.11.2020
+> coding dojo: from 20.11.2020 to 30.12.2020
