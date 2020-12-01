@@ -13,5 +13,6 @@ symfony composer req debug --dev
 
 add makeBundle
 ```bash
+symfony composer require doctrine/annotations  ## maker bundle needs the annotation bundle
 symfony composer require symfony/maker-bundle --dev
 ```
