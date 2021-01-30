@@ -10,9 +10,9 @@ use Symfony\Component\Routing\Annotation\Route;
 class ConferenceController extends AbstractController
 {
     /**
-     * @Route("/conference", name="conference")
+     * @Route("/", name="conference", methods={"GET"})
      */
-    public function index(Request $request): Response
+    public function __invoke(Request $request): Response
     {
         $name = $request->get('greet');
 
