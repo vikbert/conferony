@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Entity;
+namespace App\Core\Domain\Entity;
 
-use App\Repository\CommentRepository;
+use App\Infrastructure\Doctrine\Repository\CommentRepository;
 use DateTimeInterface;
 use Doctrine\ORM\Mapping as ORM;
 

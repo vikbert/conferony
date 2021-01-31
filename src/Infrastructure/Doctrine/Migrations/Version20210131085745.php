@@ -7,11 +7,10 @@ namespace App\Infrastructure\Doctrine\Migrations;
 use Doctrine\DBAL\Schema\Schema;
 use Doctrine\Migrations\AbstractMigration;
 
-final class Version20210130203804 extends AbstractMigration
+final class Version20210131085745 extends AbstractMigration
 {
     public function up(Schema $schema): void
     {
-        // this up() migration is auto-generated, please modify it to your needs
         $this->addSql('CREATE SEQUENCE comment_id_seq INCREMENT BY 1 MINVALUE 1 START 1');
         $this->addSql('CREATE SEQUENCE conference_id_seq INCREMENT BY 1 MINVALUE 1 START 1');
         $this->addSql(
@@ -24,7 +23,6 @@ final class Version20210130203804 extends AbstractMigration
 
     public function down(Schema $schema): void
     {
-        // this down() migration is auto-generated, please modify it to your needs
         $this->addSql('CREATE SCHEMA public');
         $this->addSql('ALTER TABLE comment DROP CONSTRAINT FK_9474526C604B8382');
         $this->addSql('DROP SEQUENCE comment_id_seq CASCADE');
